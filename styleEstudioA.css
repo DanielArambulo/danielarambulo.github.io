@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image: url(img/estudio.jpg);
+    background-size: cover;
+    background-position: 50%;
+    margin: 0px;
+    padding: 10px;
+    width: 100vw;
+}
+
+nav{
+    margin: 10px;
+    padding: 10px;
+    text-align: end;
+}
+header{
+    background-color: white;
+}
+a{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+h1{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+p{
+    color: white;
+    margin: 0px;
+    padding: 10px;
+}
+h2{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+h3{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+button{
+    background-position: center;
+    text-align: center;
+}
+
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 auto; 
+    margin: 0 auto;
+    border: 0px solid black;
+}
+
+.redes-container{
+    background-color: rgb(56, 54, 54);
+    display:flex;
+    height:15vh;
+    align-items:center;
+    justify-content:center;
+}
+.redes-container ul li{
+    display:inline-block;
+    margin:05px;
+    width:50px;
+    height:50px;
+    text-align:center;
+}
+
+.redes-container ul:hover a{
+    filter:blur(2px);
+}
+.redes-container ul li a:hover{
+    transform:translatey(-3px)scale(1.05);
+    box-shadow:05px 5px 0px rgba(0,0,0,.4);
+    filter:none;
+}
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+    color: black;
+}
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+    color: #e4405f;
+}
+.redes-container ul li.twitter:hover{
+    background:var(--twitter);
+    color: #55acee;
+}
+@media screen and (max-width: 1250px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px ;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+}

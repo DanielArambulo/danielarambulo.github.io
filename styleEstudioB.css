@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(img/Estudio\ B.avif);
+    margin: 0px;
+    padding: 10px;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+}
+
+nav{
+    padding: 0px;
+    margin: 0px;
+    text-align: end;
+}
+a{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+h1{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+.contenedor{
+    margin: 0px;
+    padding: 0px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column center;
+}
+p{
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+h2{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+h3{
+    color: white;
+    margin :10px;
+    padding: 10px;
+}
+
+.redes-container{
+    display:flex;
+    height:20vh;
+    align-items:center;
+    justify-content:center;
+}
+.redes-container ul li{
+    display:inline-block;
+    margin:05px;
+    width:50px;
+    height:50px;
+    text-align:center;
+}
+
+.redes-container ul:hover a{
+    filter:blur(2px);
+}
+.redes-container ul li a:hover{
+    transform:translatey(-3px)scale(1.05);
+    box-shadow:05px 5px 0px rgba(0,0,0,.4);
+    filter:none;
+}
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+    color: black;
+}
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+    color: #e4405f;
+}
+.redes-container ul li.twitter:hover{
+    background:var(--twitter);
+    color: #55acee;
+}
+@media screen and (max-width: 1250px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px ;
+    }
+}
+@media screen and (max-width: 500px){
+    .contenedor{
+        grid-template-columns: 1fr ;
+        gap: 20px ;
+    }
+}

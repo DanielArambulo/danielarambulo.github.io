@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image:url(img/flujo-de-senal-del-estudio-de-grabacion-daw.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
+nav{
+    text-align: end;
+    padding: 10px;
+    margin: 10px;
+}
+a{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+h2{
+    color: white;
+    margin: 0px;
+    padding: 10px;
+}
+p{
+    color: white;
+    padding: 10px;
+    margin: 0px;
+}
+.redes-container{
+    display:flex;
+    height:20vh;
+    align-items:center;
+    justify-content:center;
+}
+.redes-container ul li{
+    display:inline-block;
+    margin:05px;
+    width:50px;
+    height:50px;
+    text-align:center;
+}
+
+.redes-container ul:hover a{
+    filter:blur(2px);
+}
+.redes-container ul li a:hover{
+    transform:translatey(-3px)scale(1.05);
+    box-shadow:05px 5px 0px rgba(0,0,0,.4);
+    filter:none;
+}
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+    color: black;
+}
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+    color: #e4405f;
+}
+.redes-container ul li.twitter:hover{
+    background:var(--twitter);
+    color: #55acee;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin: 20px;
+    padding: 5px;
+    background-color : black;
+    flex-wrap: wrap;
+}
+
+.parent2 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin: 20px;
+    background-color: black;
+    padding: 5px;
+    flex-wrap: wrap;
+    
+}
+
+h1{
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-family: cursive ;
+    text-transform: capitalize;
+}
+.nav-link2{
+    padding: 10px;
+    margin: 10px;
+}
+.img{
+    max-width: 50vw;
+}
+@media screen and (max-width: 768px){
+    .img{
+        max-width: 100%;
+    }
+    .parent{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .parent2{
+        grid-template-rows: 0.75fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image: url(img/estudio\ a.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+nav.a{
+    text-align: left;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+form{
+    width: 450px;
+    margin: auto;
+    background-color: rgba(185, 156, 59, 0.4) ;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+h2{
+    color: white;
+    text-align: center;
+    margin: 0px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton{
+    background:#31384A ;
+    color: #fff;
+}
+#boton:hover{
+    cursor: pointer;
+}
+@media (max-width:480px) {
+    form{
+        width: 100%;
+    }
+}
+
+a{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav{
+    margin: 0%;
+    padding: 0%;
+    text-align: end;
+}
+h1{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+p{
+    color: white;
+    padding: 10px;
+    margin: 0px;
+}
+
+
+
+

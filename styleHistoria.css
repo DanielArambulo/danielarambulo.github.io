@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: url(img/historia.jpg);
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
+nav{
+    text-align: end;
+    padding: 10px;
+    margin: 10px;
+}
+a{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+h1{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+h2{
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+p{
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+img{
+    padding: 20%;
+    margin: 20%;
+}
+.redes-container{
+    display:flex;
+    height:20vh;
+    align-items:center;
+    justify-content:center;
+    align-items: flex-end;
+}
+.redes-container ul li{
+    display:inline-block;
+    margin:05px;
+    width:50px;
+    height:50px;
+    text-align:center;
+}
+
+.redes-container ul:hover a{
+    filter:blur(2px);
+}
+.redes-container ul li a:hover{
+    transform:translatey(-3px)scale(1.05);
+    box-shadow:05px 5px 0px rgba(0,0,0,.4);
+    filter:none;
+}
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+    color: black;
+    
+}
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+    color: #e4405f;
+}
+.redes-container ul li.twitter:hover{
+    background:var(--twitter);
+    color: #55acee;
+}
