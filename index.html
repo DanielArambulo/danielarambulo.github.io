@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de monedas</title>
+</head>
+<body>
+    
+    <img src="img/icono2.png" alt="" class="conversor-imagen">
+    <h1>Conversor de monedas</h1>
+    <p>Escoje la moneda y la cantidad para realizar la conversion</p>
+    <div class="container">
+        <div class="moneda">
+            <select id="moneda-uno">
+                <option value="USD"select>USD</option>
+                <option value="ARS">ARS</option>
+                <option value="EUR">EUR</option>
+                <option value="MXN">MXN</option>
+                <option value="BRL">BRL</option>
+            </select>
+            <input type="number" id="cantidad-uno" placeholder="0" value="1">
+        </div>
+    </div>
+    <div>
+        <div class="taza-cambio-contenedor"></div>
+        <button class="btn" id="taza" >
+            cambio
+        </button>
+        <div class="cambio" id="cambio"></div>
+    </div>
+    <div class="moneda">
+        <select id="moneda-dos">
+            <option value="USD">USD</option>
+            <option value="ARS">ARS</option>
+            <option value="EUR">EUR</option>
+            <option value="MXN">MXN</option>
+            <option value="BRL">BRL</option>
+        </select>
+        <input type="number" id="cantidad-dos" placeholder="0">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
